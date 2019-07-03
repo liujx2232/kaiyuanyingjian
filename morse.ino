@@ -50,7 +50,13 @@ void loop()
      if (comdata.length() > 0)
       {
           Serial.println(comdata);
+          if (comdata == '.')morse.dot();
+          else if (comdata == '-')morse.dash();
+          else if (comdata == ' ')morse.w_space();
+          if (comdata != ' ' && str[i] != '*')morse.c_space();
           comdata = "";
       }
+      
+    
   }
 }
