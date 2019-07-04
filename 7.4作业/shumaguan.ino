@@ -1,4 +1,4 @@
-int income;
+int income = 0;
 void setup()
 {
   pinMode(0, OUTPUT);
